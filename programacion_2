@@ -1,40 +1,40 @@
-# include <iostream>
+#include<iostream> 
+using namespace std;
+template<typename L> 
+class Alumno{
+L dni , anio;
+ L nombre;
+  
+  public:
+  	Alumno(L b, L c){
+  	  		
+  		dni=b;
+  		anio=c;
+  		
+  		
+	  }
+	  
+	Alumno(L a){
+	  	nombre=a;
+	}
+	  
+	  
+	  void print();
+	  
+ }	  ;
+ template<typename L> 
+ void Alumno<L>::print(){
+ 	cout<<"DNI es: "<<dni<<"  Y  Año de nacimiento:"<<anio<<endl;
+ 	cout<<"su edad actual es: "<<2021-anio<<endl;
+ 	cout<<"Su nombre es: "<<nombre<<endl;
+ };
+ 
+ 
+ 
+ 
+ int main(){
+ 	
+ 	Alumno<int>obj1(73517491,2002);
+ 	obj1.print();
 
-
-usando el  espacio de nombres  std;
-
-plantilla <typename   T>
-
-clase  A {
-    T  dato;
-público:
-    A();
-    A);   
-     impresión vacía ();
-    
-    
-};
-
-plantilla <typename   T>
-A <T> :: A () {}
-plantilla <typename   T>
-A <T> :: A (T  d): dato (d) {}
-
-plantilla <typename   T>
-void  A <T> :: print () {
-    cout << dato << " \ n ";
-}
-
-
-
-
-
-// incluir  a.h
-
-
-int  main ()
-{
-    
-    
-    return  0;
-}
+ }
